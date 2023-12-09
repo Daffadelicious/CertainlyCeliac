@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Oswald&display=swap");
+
+/* Base styles */
+
+:root {
+  --header-font: "Oswald", sans-serif;
+  --body-font: "Cardo", serif;
+  --green-fern: #628b48;
+  --green-mantis: #6ab547;
+  --brown-rosy: #ba9790;
+  --brown-sugar: #b4654a;
+  --black-bean: #3c1518;
+  --rose-misty: #f1e2df;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+body {
+  padding: 1em;
+  /* background-color: var(--brown-rosy); */
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--header-font);
+  color: var(--black-bean);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+/* Header styles  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  gap: 1em;
+}
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  padding: 0px;
+}
+
+.logo {
+  width: 3em;
+  align-self: center;
+}
+
+/* Home styles */
+
+img {
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner-text {
+  text-align: right;
+  position: absolute;
+  right: 1em;
+  bottom: 0.4em;
+  color: var(--rose-misty);
+}
+
+.banner-text p {
+  margin-top: 0px;
+}
+
+.banner-text h2 {
+  margin: 0px;
+  color: var(--green-mantis);
+}
+
+h3 {
+  text-align: center;
+}
+
+.search-button {
+  margin: auto;
+}
+
+/* Gallery Styles */
+.gallery-heading {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+figure {
+  max-width: 25%;
+  text-align: center;
+  margin: 1em;
+}
