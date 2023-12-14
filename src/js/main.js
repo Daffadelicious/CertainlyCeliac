@@ -1,1 +1,3 @@
-// alert("JS is connected")
+import { loadHeaderFooter } from "./utils.mjs";
+
+loadHeaderFooter();

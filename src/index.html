@@ -11,65 +11,68 @@
     />
   </head>
   <body>
-    <header>
-      <div>
-        <img src="img/forkthis.png" alt="Certainly Celiac logo" class="logo" />
-        <h1>Certainly Celiac</h1>
-      </div>
-      <span class="material-symbols-outlined">menu_book</span>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="/src/">Home</a></li>
-        <li><a href="gallery/">Recipe Search</a></li>
-        <li>About</li>
-      </ul>
-    </nav>
     <section class="banner">
-      <img src="img/bannerimage1.webp" alt="" class="banner-img" />
+      <img src="img/bannerimage1.webp" alt="" class="full-img banner-img" />
       <div class="banner-text">
         <h2>Certainly Celiac</h2>
         <p>Find gluten free recipes quickly and easily</p>
       </div>
     </section>
-    <section>
-      <h3>Check out these suggestions</h3>
-      <div class="gallery">
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-      </div>
-      <h3>Search for more</h3>
-      <div class="center">
+    <section class="center crave">
+      <form id="crave-submit" action="gallery/index.html?query=">
+        <h2>What are you craving?</h2>
         <input type="text" />
-        <button class="search-btn">Search</button>
+        <input type="submit" value="Search" />
+      </form>
+    </section>
+    <section class="recommend-wrapper">
+      <h3>Check out these suggestions</h3>
+      <div class="center column">
+        <a
+          class="recommended-link"
+          href="recipe_details/index.html?id=recipe_c8470713bc64de6e42cffaaed7487b43"
+          alt="View recipe for One-Pot Creamy Bruschetta Chicken"
+        >
+          <figure class="recommended">
+            <img
+              src="https://edamam-product-images.s3.amazonaws.com/web-img/8e7/8e7abcd3182daf116c1b7011f42e035a.jpeg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIETCcbH%2FqlUFpr%2F%2FqWoHKF%2Bf7FmvT0uGhol81UdleQGQAiEAkzWFdCHrYk5qU5wPbgnyzdoPPz2cP8F1YQC0vGAtXvEquQUIWRAAGgwxODcwMTcxNTA5ODYiDK43FV4TmnqJg%2FVP%2ByqWBbhdPfQyu5C7V9FH01bvEi2E1Q8iMr94hkJRILkQJWK6W7uT1WfVWW8ruTiD40p1Gxx2m5Rxj17FRYODRONn72HYQ8ajLNCnDb%2FDJx0vaYLM3OsjllUBNqxAkx2%2FNAouAEBl%2FG4e%2FM7PHnW74DHvBgt1krAAMwUs3o2izYqwbHUI9YS4ZLD5HlUDBYSamtTgkLI7W%2FPuk%2BJ2LalMwfUoGm%2FQU1RLhwIgswh9x8LctjU3M8R1Tp%2BV2lzapQpjy7tXwj0Hmu6YBS611TUpyJfv0P45ZgmGREqInV2NyWvS9YUnr5g1%2FO4IEi%2FcK03y5gHGZfkAAqx%2Bm%2BM87pr0ETefcNsGE9EYyFE4N2xKeFZLteWsLNpScO8HVct0iIJGAPjWuuprBBGXcvvymmFn39LVSTQTVq5xti4mQAu%2B0BkA7eblhwx1s%2BJ0DtHI1VvsOl%2FnXlaihTlztG34KMYer2v6Vk%2BtngXugUo7y%2BEqm9eVKmW5TUlw36gzPiuDt6GbFe3rlw30t3qim7ovN%2BnjRXeSzLGKnFPtq%2BwGbJzha5gVLv2Zdfl7XRgIDWlE3Aw70A2ps5ARFZwlr6SjK5Dwt2my41iW2%2BCPWRyPNfqY8AZFQeGFssEKgMakH%2BO64zOKYcZg2sHmETizm%2FF6nIPO2sc3w6NjMwpdtHNBCusVPnecagDF6ewidgdWlNUmB6loN9Yck23k36coh0heakULAsBKTJKWMd8zhGz5bvqmPk0ZPvBGJuWMwhQUD6zpXTcXA5XEqBpMsgqAvqrt2MX21a%2FNMU4%2FsHrk4Z8Tx5cF7sYgPU0XHPOqq4cIsF7iz0Gm%2BYlgOd6WSrkWCe369TisHA0waJKUy8e1265nIbbt5h8m8qO3avVf1OlcMOXc6qsGOrEBo7YqX9tFB6rxiA5wvls%2F7JBMls%2FMHAi3x2sfDPK1b8xbONTeul6HMHfz2r9cqXo78u2mCTJVUSjyH7A0ohV66YPU5sLCJJI9jQ03t5ySMzglKp4MGVNF9%2FO7iENEQadroaKAkjJZ7fnFDWmWacvi2si2oIo5ZhjjKag8UQ1yI4RwLYs3V98gDVkZszBqALRMulLJeKwTI4fux4lYqPev0pw3fakbgBEnUWizwD5RDUJ6&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231214T083805Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFAQJ6PXLI%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9afacd3700be8fec022b8ce039508899a3461cccd4bd3f63d3da372b760d9efe"
+              alt="Image of One-Pot Creamy Bruschetta Chicken"
+            />
+            <figcaption>One-Pot Creamy Bruschetta Chicken</figcaption>
+          </figure>
+        </a>
+        <a
+          class="recommended-link"
+          href="recipe_details/index.html?id=recipe_1aae863595a9c94fe1c0a34b39abb03a"
+          alt="View recipe for Radicchio, Fennel & Pear Salad"
+        >
+          <figure class="recommended">
+            <img
+              src="https://edamam-product-images.s3.amazonaws.com/web-img/15e/15e56a86571b33cb9bef98d23b7fb31a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIETCcbH%2FqlUFpr%2F%2FqWoHKF%2Bf7FmvT0uGhol81UdleQGQAiEAkzWFdCHrYk5qU5wPbgnyzdoPPz2cP8F1YQC0vGAtXvEquQUIWRAAGgwxODcwMTcxNTA5ODYiDK43FV4TmnqJg%2FVP%2ByqWBbhdPfQyu5C7V9FH01bvEi2E1Q8iMr94hkJRILkQJWK6W7uT1WfVWW8ruTiD40p1Gxx2m5Rxj17FRYODRONn72HYQ8ajLNCnDb%2FDJx0vaYLM3OsjllUBNqxAkx2%2FNAouAEBl%2FG4e%2FM7PHnW74DHvBgt1krAAMwUs3o2izYqwbHUI9YS4ZLD5HlUDBYSamtTgkLI7W%2FPuk%2BJ2LalMwfUoGm%2FQU1RLhwIgswh9x8LctjU3M8R1Tp%2BV2lzapQpjy7tXwj0Hmu6YBS611TUpyJfv0P45ZgmGREqInV2NyWvS9YUnr5g1%2FO4IEi%2FcK03y5gHGZfkAAqx%2Bm%2BM87pr0ETefcNsGE9EYyFE4N2xKeFZLteWsLNpScO8HVct0iIJGAPjWuuprBBGXcvvymmFn39LVSTQTVq5xti4mQAu%2B0BkA7eblhwx1s%2BJ0DtHI1VvsOl%2FnXlaihTlztG34KMYer2v6Vk%2BtngXugUo7y%2BEqm9eVKmW5TUlw36gzPiuDt6GbFe3rlw30t3qim7ovN%2BnjRXeSzLGKnFPtq%2BwGbJzha5gVLv2Zdfl7XRgIDWlE3Aw70A2ps5ARFZwlr6SjK5Dwt2my41iW2%2BCPWRyPNfqY8AZFQeGFssEKgMakH%2BO64zOKYcZg2sHmETizm%2FF6nIPO2sc3w6NjMwpdtHNBCusVPnecagDF6ewidgdWlNUmB6loN9Yck23k36coh0heakULAsBKTJKWMd8zhGz5bvqmPk0ZPvBGJuWMwhQUD6zpXTcXA5XEqBpMsgqAvqrt2MX21a%2FNMU4%2FsHrk4Z8Tx5cF7sYgPU0XHPOqq4cIsF7iz0Gm%2BYlgOd6WSrkWCe369TisHA0waJKUy8e1265nIbbt5h8m8qO3avVf1OlcMOXc6qsGOrEBo7YqX9tFB6rxiA5wvls%2F7JBMls%2FMHAi3x2sfDPK1b8xbONTeul6HMHfz2r9cqXo78u2mCTJVUSjyH7A0ohV66YPU5sLCJJI9jQ03t5ySMzglKp4MGVNF9%2FO7iENEQadroaKAkjJZ7fnFDWmWacvi2si2oIo5ZhjjKag8UQ1yI4RwLYs3V98gDVkZszBqALRMulLJeKwTI4fux4lYqPev0pw3fakbgBEnUWizwD5RDUJ6&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231214T084148Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFAQJ6PXLI%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5768ae845d92c6a225c8e8f464aa556050a21ef32dabd54731f3146b7de74ee0"
+              alt="Image of Radicchio, Fennel & Pear Salad"
+            />
+            <figcaption>Radicchio, Fennel & Pear Salad</figcaption>
+          </figure>
+        </a>
+        <a
+          class="recommended-link"
+          href="recipe_details/index.html?id=recipe_a6050359a737dce7643e9452c6819ff8"
+          alt="View recipe for Chocolate Chip Cookie Dough Ice Cream"
+        >
+          <figure class="recommended">
+            <img
+              src="https://edamam-product-images.s3.amazonaws.com/web-img/d5c/d5cfecc290deed659f4ace681b5db432.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEN%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGN3f4JC6Xa59U2VumP8s24MubvGEVhEuYA5GUTU4ftlAiEA868tneeNds96ZX6%2BTBzETCoGqUgwh09rtAizGdV3xYwquQUIWBAAGgwxODcwMTcxNTA5ODYiDBjwPaFyHf4sLBt%2BHSqWBVVMlh14GZ8GHZrSPxbYhqIpP2XyGetR7E5Xic%2FbDECQtvGVl40NUud1dMrACMqlLZRZlv6z8SBOjn7PzXwUQX24HFM9GbJ41vZlMsm0xRSlMtSoUSHlqjjSTUuM91b4z8XJvKLCbL%2FaQ%2F2lBd%2FkvTD86AiZT6aPcbrirNR1lqLoH3E8GLvymCpWOm%2FQuwejeDO0F002epooJQo4oRWnMacEB0uL2pN6vhNEAUL8F0WDMMiz6FNzH8t8TdmUIwpHRtTn80sLRuYF8hcWajmIiNYxtjC5lx3fnjvGOTiqy9XgpyqxcsqEvYdWXbrkaWpH8scATDP2W1FwDmJ7tldcYJzpN5HoJJgxzH4FeRj0zaI26qZ%2BnRJastKaFVaQOvVY6AQNjqMRVx7VIiJFR54mdaG9%2B5ddUM49oHs4H%2FYQQXwc8N21OY2ycdtQVDVqVZiCfpKhP%2FNEe%2F6jc%2F7b1BOtbRQ0ixtzGny2OfDE43dpybo3Yz5aU4tVG3edBQzNv0su%2FvxsjUBmZWFtYJ2jrz0zHHVw8kOZQx08KUCr7OGe4T%2BcDdxcNm7z4qjhAYNbDAFBkYbIX%2BOn0P%2FuCaoirrAwSyYN7ipdG70mOkZySlYb7nda93l59Bvr0B7%2Bd6nfiTs3Fcg0OX1YU0rpL6cWZkJ8yFLFiqDm4KGrwnS5W3EE%2FIq%2FIfYrUZ1jNxWNwdBqghjl%2B2EA13IGpyOJ78FcpFmeexYsK9RyKghPVISH0Stkk3i%2FxW81PdPLp3UYvOQLT8N4cqp9Ri4u235vJELLW0QuMiqBnj%2BQVf%2B8HA9NRSbVnYXukM83SwhgxVoehlfYxQPnTSDSXqSXm86oRgqYACQBM%2FA8Cvybe54rnbmoC06%2BeomXMpoBbDnPMM7O6qsGOrEBiC3bGaTgdY1H1Xc2nYbKob3yaMrWyRLvAu8jCBztsu653DqY9jRgBJ5vz%2B9OQNKEII0pyNvWfAD6FO7okdp9JdazWznQXiFLyg75Eon6cMKV9WCkSStm%2BLxXyEhFJzWmyJEkfvHlZykm66uVwru0uZx75pH4TcvQgsutTRxjPZiJB%2FJuMl7%2Flq9aqLxqQ59ep6Fwg2Z90PiN4fCS2v33BNAGe4HBq%2F9JO7G6UA1%2B9V3z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231214T084423Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFCM3FBSM3%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3fc0a34a89a9363c9ee831dd27a1968deb64c965ddba3c2ba05e8cf8cef765f3"
+              alt="Image of Chocolate Chip Cookie Dough Ice Cream"
+            />
+            <figcaption>Chocolate Chip Cookie Dough Ice Cream</figcaption>
+          </figure>
+        </a>
       </div>
     </section>
     <section>
-      <br />
-      <img src="img/banner2.jpeg" alt="" />
+      <img src="img/banner2.jpeg" alt="" class="full-img" />
       <a href=""><h3>Learn more about this project here</h3></a>
     </section>
-
-    <footer>
-      All recipe content on this page is owned by
-      <a href="https://www.edamam.com/">Edamam</a> or its content suppliers
-    </footer>
   </body>
-  <script src="js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Recipe Search</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
@@ -11,73 +11,17 @@
     />
   </head>
   <body>
-    <header>
+    <section class="center crave column">
+      <h1 class="gallery-heading">What are you craving?</h1>
       <div>
-        <img
-          src="../img/forkthis.png"
-          alt="Certainly Celiac logo"
-          class="logo"
-        />
-        <h1>Certainly Celiac</h1>
+        <input id="search-input" type="text" />
+        <!-- <span class="material-symbols-outlined">filter_alt</span> -->
+        <button id="search-btn">Search</button>
       </div>
-      <span class="material-symbols-outlined">menu_book</span>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="gallery/">Recipe Search</a></li>
-        <li>About</li>
-      </ul>
-    </nav>
-    <h1 class="gallery-heading">Gallery</h1>
-    <div class="center">
-      <label for="search">Search for a product</label>
-      <input type="text" />
-      <span class="material-symbols-outlined">filter_alt</span>
-    </div>
+    </section>
     <section>
-      <div class="gallery">
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-        <figure>
-          <img class="gallery-img" src="../img/banner2.jpeg" alt="test image" />
-          <caption>
-            Food
-          </caption>
-        </figure>
-      </div>
-      <footer>
-        All recipe content on this page is owned by
-        <a href="https://www.edamam.com/">Edamam</a> or its content suppliers
-      </footer>
+      <div id="gallery"></div>
     </section>
   </body>
+  <script type="module" src="../js/recipeSearch.js"></script>
 </html>
